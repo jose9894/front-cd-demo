@@ -11,7 +11,7 @@ function App() {
 
   return (
     <main className="main-content">
-      <h1>App is running!</h1>
+      <h1>App is running HEHE!</h1>
       <Routes>
         <Route path="/" element={<HomePage />}/>
         <Route path="/settings" element={<SettingsPage />}/>
