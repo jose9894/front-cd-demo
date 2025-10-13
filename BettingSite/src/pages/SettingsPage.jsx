@@ -5,10 +5,8 @@ function SettingsPage() {
 
   return (
   <div>
-    <p>Hey</p>
-      <div>
-      <SettingsBtn/>
-      </div>
+    <p>Hey from settings</p>
+  
   </div>
   )
 }

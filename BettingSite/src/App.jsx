@@ -10,8 +10,7 @@ import {Routes, Route} from "react-router-dom"
 function App() {
 
   return (
-    <main className="main-content">
-      <h1>App is running HEHE!</h1>
+    <main className="main-content"> 
       <Routes>
         <Route path="/" element={<HomePage />}/>
         <Route path="/settings" element={<SettingsPage />}/>

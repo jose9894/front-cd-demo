@@ -5,7 +5,7 @@ function HomePage() {
 
   return (
   <div>
-    <p>Hey</p>
+    <p>Hey from homepage</p>
       <div>
       <SettingsBtn/>
       </div>

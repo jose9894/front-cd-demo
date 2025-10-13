@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom"
 
 function SettingsBtn() {
+    const navigate = useNavigate();
   
   function OnStettingClicked() {
-    alert("clicked setting btn")
+    navigate("./settings");
   }
+
 
   return ( 
       <div className="setting-btn">
