@@ -19,10 +19,13 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
+        working-directory: ./fetchDemo
         run: npm install
 
       - name: Build
+        working-directory: ./fetchDemo
         run: npm run build
 
       - name: Deploy
+        working-directory: ./fetchDemo
         run: npm run deploy
