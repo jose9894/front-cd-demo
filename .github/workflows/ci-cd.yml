@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -26,7 +29,7 @@ jobs:
         working-directory: ./fetchDemo
         run: npm run build
 
-      - name: Deployz
+      - name: Deploy
         working-directory: ./fetchDemo
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
