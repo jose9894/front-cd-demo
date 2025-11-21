@@ -8,6 +8,9 @@ on:
 jobs:
   build-job:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout repository
@@ -19,13 +22,17 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
+        working-directory: ./fetchDemo
         run: npm install
 
       - name: Build
+        working-directory: ./fetchDemo
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          path: ./fetchDemo/dist
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
