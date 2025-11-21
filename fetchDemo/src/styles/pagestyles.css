@@ -1,0 +1,61 @@
+.nav-container a{
+margin: 30px;
+font-size: 30px;
+padding: auto;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+.layout-wrapper{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100vh;
+/* border: 1px black solid; */
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stuff button{
+padding: auto;
+border-color: black;
+width: 100px;
+}
+
+
+.picker-select{
+    border-radius: 10px;
+}
+
+.export{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.stuff button:hover{
+    background-color: rgb(128, 128, 128);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info input{
+    border-radius: 5px;
+    height: 25px;
+}
+
+.countryBtns{
+/* border: 1px black solid; */
+
+}
