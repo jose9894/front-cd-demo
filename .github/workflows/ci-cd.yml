@@ -19,15 +19,13 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        working-directory: ./fetchDemo
         run: npm install
 
       - name: Build
-        working-directory: ./fetchDemo
         run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./fetchDemo/dist
+          publish_dir: ./dist
