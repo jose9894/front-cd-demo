@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import lobby from "../music/game-music-loop-7-145285.mp3";
 import win from "../music/level-win-6416.mp3";
 import loss from "../music/lose-sfx-365579.mp3";
-import { FaBan } from "react-icons/fa";
+//import { FaBan } from "react-icons/fa";
 
 function Home() {
   const gameSoundRef = useRef(null);
@@ -41,7 +41,7 @@ function Home() {
   return (
     <main>
       <p>Welcome to sound board</p>
-      <button onClick={playWin}>Win</button>
+      <button onClick={playWin}>Winzzz</button>
       <button onClick={playLoss}>Loss</button>
       <button onClick={pauseGameSound}><FaBan/></button>
       <button onClick={playGameSound}>Play</button>
