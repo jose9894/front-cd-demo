@@ -47,6 +47,6 @@ function Home() {
       <button onClick={playGameSound}>Play</button>
     </main>
   );
-//}
+}
 
 export default Home;
