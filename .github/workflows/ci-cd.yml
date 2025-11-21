@@ -29,5 +29,5 @@ jobs:
       - name: Deploy
         working-directory: ./fetchDemo
         env:
-          GITHUB_TOKEN: ${{ secrets.KEY_TO_MY_STUFF }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
