@@ -26,6 +26,6 @@ describe('formatCompactNumber', () => {
     expect(formatCompactNumber(999)).toBe("999");
     expect(formatCompactNumber(999_999)).toBe("1000.0K"); // round up
     expect(formatCompactNumber(1_000_000)).toBe("1.0M");
-    expect(formatCompactNumber(999_999_999)).toBe("1000.0M"); // rounds up
+    expect(formatCompactNumber(999_999_999)).toBe("1000.99M"); // rounds up
   });
 });

@@ -41,7 +41,7 @@ function Home() {
   return (
     <main>
       <p>Welcome to sound board</p>
-      <button onClick={playWin}>Winzzz</button>
+      <button onClick={playWin}>Winz</button>
       <button onClick={playLoss}>Loss</button>
       <button onClick={pauseGameSound}><FaBan/></button>
       <button onClick={playGameSound}>Play</button>
