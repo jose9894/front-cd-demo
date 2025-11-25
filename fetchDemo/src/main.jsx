@@ -7,7 +7,7 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
   // <StrictMode> remove
-    <BrowserRouter>
+    <BrowserRouter basename="/front-cd-demo">
     <App />
     </BrowserRouter>
   // </StrictMode>,
